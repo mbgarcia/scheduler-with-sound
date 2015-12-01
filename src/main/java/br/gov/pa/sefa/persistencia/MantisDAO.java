@@ -1,6 +1,5 @@
 package br.gov.pa.sefa.persistencia;
 
-import java.awt.Toolkit;
 import java.math.BigDecimal;
 
 import javax.ejb.Stateless;
@@ -22,8 +21,6 @@ public class MantisDAO {
 				.setParameter("novo", 10)
 				.setParameter("novo", 10)
 				.getSingleResult();
-		
-		Toolkit.getDefaultToolkit().beep();
 		
 		return qtd.longValue() > 0 ? true:false;
 	}
